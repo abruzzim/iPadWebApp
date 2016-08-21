@@ -1,0 +1,14 @@
+/* ...................................... */
+/* Orientation-specific Layout - Portrait */
+
+
+/* home page */
+.page.portrait.home header { -webkit-transform: translate3d(0px,0px,0px); }
+.page.portrait.home div.logo_gourmet  { -webkit-transform: translate3d(54px,130px,0px); }
+.page.portrait.home div.logo_cupcakes { -webkit-transform: translate3d(195px,310px,0px); }
+.page.portrait.home div.cupcake_01 { -webkit-transform: translate3d(90px,545px,0px); }
+.page.portrait.home div.cupcake_02 { -webkit-transform: translate3d(360px,457px,0px); }
+.page.portrait.home div.cupcake_03 { -webkit-transform: translate3d(535px,290px,0px); }
+
+
+

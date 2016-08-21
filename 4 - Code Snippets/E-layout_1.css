@@ -1,0 +1,33 @@
+/* Layout - All */
+
+.page { position: relative; overflow: hidden; }
+
+header  {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 300px;
+	border-bottom: 1px solid #e8d395;
+	background: #fff0a9 url(../images/header_tile.png) repeat 0 bottom;
+	-webkit-transform: translate3d(0px,0px,0px);
+}
+
+article {
+	display: block; position: absolute; top: 115px; left: 0px;
+	width: 100%;
+	margin-bottom: 80px;
+	background: -webkit-linear-gradient(top,  #ffed9a 50%,#fff5c7 100%); /* Chrome10+,Safari5.1+ */
+	background: linear-gradient(to bottom,  #ffed9a 50%,#fff5c7 100%); /* W3C */
+}
+article .content_container { position: absolute; overflow: hidden; top: 0px; left: 0px; width: 100%; height: 100%; background: none; }
+article .content_container .content_loading_container { position: absolute; top: 0px; padding: 40px 0px 0px 80px; margin-right: 20px; }
+
+nav { position: absolute; bottom: 0; left: 0; width: 100%; }
+
+footer  {
+	display: block; position: absolute; bottom: 0; left: 0;
+	width: 100%;
+	height: 80px;
+	background: -webkit-linear-gradient(top,  #3c160a 0%,#7a3925 100%); /* Chrome10+,Safari5.1+ */
+	background: linear-gradient(to bottom,  #3c160a 0%,#7a3925 100%); /* W3C */
+}

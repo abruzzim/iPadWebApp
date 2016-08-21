@@ -1,0 +1,11 @@
+/* ...................................... */
+/* Orientation-specific Layout - Landscape */
+
+
+/* home page */
+.page.landscape.home header { -webkit-transform: translate3d(0px,-70px,0px); }
+.page.landscape.home div.logo_gourmet  { -webkit-transform: translate3d(170px,61px,0px); }
+.page.landscape.home div.logo_cupcakes { -webkit-transform: translate3d(310px,240px,0px); }
+.page.landscape.home div.cupcake_01 { -webkit-transform: translate3d(254px,290px,0px); }
+.page.landscape.home div.cupcake_02 { -webkit-transform: translate3d(562px,304px,0px); }
+.page.landscape.home div.cupcake_03 { -webkit-transform: translate3d(711px,174px,0px); }

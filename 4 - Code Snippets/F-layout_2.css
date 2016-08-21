@@ -1,0 +1,7 @@
+header, div.cupcake_01, div.cupcake_02, div.cupcake_03, .map_container, div.logo_gourmet, div.logo_cupcakes { position: absolute; }
+
+div.logo_gourmet  { width: 690px; height: 245px; background: url(../images/logo_gourmet.png) no-repeat 0 0; background-size: contain; -webkit-transform: scale(1) translate3d(170px,-260px,0px); }
+div.logo_cupcakes { width: 258px; height: 25px;  background: url(../images/logo_cupcakes.png) no-repeat 0 0; background-size: contain; -webkit-transform: translate3d(-300px,240px,0px); }
+div.cupcake_01 { width: 343px; height: 412px; background: url(../images/cupcake_01.png) no-repeat 0 0; background-size: contain; -webkit-transform: translate3d(200px,1030px,0px); }
+div.cupcake_02 { width: 285px; height: 335px; background: url(../images/cupcake_02.png) no-repeat 0 0; background-size: contain; -webkit-transform: translate3d(-300px,140px,0px); }
+div.cupcake_03 { width: 220px; height: 245px; background: url(../images/cupcake_03.png) no-repeat 0 0; background-size: contain; -webkit-transform: translate3d(1030px,174px,0px); }

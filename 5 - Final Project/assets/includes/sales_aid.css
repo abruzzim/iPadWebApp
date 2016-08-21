@@ -1,0 +1,127 @@
+/*  CSS Document  */
+
+@charset "UTF-8";
+
+/* Global Styles */
+body { margin: 0px; padding: 0px; font-family: Helvetica; font-size: 14px; color: #8e5b30; }
+
+h1 { margin: 0 0 12px 0; font-weight: normal; font-size: 2.5em; color: #b17d59; }
+h2 { margin: 0 0 .5em 0; font-size: 1.8em; }
+h3 { font-size: 1.2em; margin: 0 0 0 0; }
+p,ul { margin: 0 0 1.5em 0; line-height: 1.4em; }
+a { color: #900; }
+.clear { clear: both; line-height: 1px; }
+
+
+/* Layout - All */
+
+.page { position: relative; overflow: hidden; }
+
+header  {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 300px;
+	border-bottom: 1px solid #e8d395;
+	background: #fff0a9 url(../images/header_tile.png) repeat 0 bottom;
+	-webkit-transform: translate3d(0px,0px,0px);
+}
+
+article {
+	display: block; position: absolute; top: 115px; left: 0px;
+	width: 100%;
+	margin-bottom: 80px;
+	background: -webkit-linear-gradient(top,  #ffed9a 50%,#fff5c7 100%); /* Chrome10+,Safari5.1+ */
+	background: linear-gradient(to bottom,  #ffed9a 50%,#fff5c7 100%); /* W3C */
+}
+article .content_container { position: absolute; overflow: hidden; top: 0px; left: 0px; width: 100%; height: 100%; background: none; }
+article .content_container .content_loading_container { position: absolute; top: 0px; padding: 40px 0px 0px 80px; margin-right: 20px; }
+
+nav { position: absolute; bottom: 0; left: 0; width: 100%; }
+nav a { display: inline-block; color: #f8f0d4; font-weight: bold; text-transform: uppercase; margin: 15px 0px 0px 25px; padding: 15px 0px 30px 33px; background: url(../images/nav_icons.png?v=2) no-repeat 0px 0px; }
+nav a.selected { color: #442610; color: #ffe77b; background-position: 0px -80px; }
+
+footer  {
+	display: block; position: absolute; bottom: 0; left: 0;
+	width: 100%;
+	height: 80px;
+	background: -webkit-linear-gradient(top,  #3c160a 0%,#7a3925 100%); /* Chrome10+,Safari5.1+ */
+	background: linear-gradient(to bottom,  #3c160a 0%,#7a3925 100%); /* W3C */
+}
+footer p { position: absolute; top: 32px; right: 20px; color: #e2d5ae; font-size: .85em; font-weight: bold; }
+
+header, div.cupcake_01, div.cupcake_02, div.cupcake_03, .map_container, div.logo_gourmet, div.logo_cupcakes { position: absolute; -webkit-transition: -webkit-transform 1s ease; }
+
+div.logo_gourmet  { width: 690px; height: 245px; background: url(../images/logo_gourmet.png) no-repeat 0 0; background-size: contain; -webkit-transform: scale(1) translate3d(170px,-260px,0px); }
+div.logo_cupcakes { width: 258px; height: 25px;  background: url(../images/logo_cupcakes.png) no-repeat 0 0; background-size: contain; -webkit-transform: translate3d(-300px,240px,0px); }
+div.cupcake_01 { width: 343px; height: 412px; background: url(../images/cupcake_01.png) no-repeat 0 0; background-size: contain; -webkit-transform: translate3d(200px,1030px,0px); }
+div.cupcake_02 { width: 285px; height: 335px; background: url(../images/cupcake_02.png) no-repeat 0 0; background-size: contain; -webkit-transform: translate3d(-300px,140px,0px); }
+div.cupcake_03 { width: 220px; height: 245px; background: url(../images/cupcake_03.png) no-repeat 0 0; background-size: contain; -webkit-transform: translate3d(1030px,174px,0px); }
+
+.map_container { position: absolute; width: 350px; height: 350px; border: 1px solid #8e5b30; background-color: #ddd; }
+.map_container.off { -webkit-transform: translate3d(1100px,170px,0px); }
+.map_container #map_canvas { width: 100%; height: 100%; }
+
+.gallery_container .detail { display: inline-block; }
+.gallery_container .thumbnail { float: left; margin: 0px 10px 10px 0px; display: inline-block; }
+.gallery_container .thumbnail img { border: 2px solid rgba(0,0,0,0); }
+.gallery_container .thumbnail img.selected { border-color: #8e5b30; }
+.gallery_container .thumbnails .caption_text { display: none; }
+
+
+/* ....................................... */
+/* Orientation-specific Layout - Landscape */
+.page.landscape  { width: 1024px; height: 748px; }
+.page.landscape header  { width: 1024px; -webkit-transform: translate3d(0px,-185px,0px); }
+.page.landscape article { height: 553px; }
+
+/* home page */
+.page.landscape.home header { -webkit-transform: translate3d(0px,-70px,0px); }
+.page.landscape.home div.logo_gourmet  { -webkit-transform: translate3d(170px,61px,0px); }
+.page.landscape.home div.logo_cupcakes { -webkit-transform: translate3d(310px,240px,0px); }
+.page.landscape.home div.cupcake_01 { -webkit-transform: translate3d(254px,290px,0px); }
+.page.landscape.home div.cupcake_02 { -webkit-transform: translate3d(562px,304px,0px); }
+.page.landscape.home div.cupcake_03 { -webkit-transform: translate3d(711px,174px,0px); }
+
+/* content */
+.page.landscape div.logo_gourmet  { -webkit-transform: scale(.6) translate3d(-215px,-60px,0px); }
+.page.landscape div.logo_cupcakes { -webkit-transform: scale(.85) translate3d(390px,90px,0px); }
+.page.landscape .map_container.on { -webkit-transform: translate3d(630px,170px,0px); }
+.page.landscape .contact_us_content { width: 500px; }
+.page.landscape .gallery_container { width: 920px; position: relative; }
+.page.landscape .gallery_container .detail { margin-right: 15px; padding-right: 10px; border-right: 2px solid #8e5b30; float: left; }
+.page.landscape .gallery_container .detail img { width: 510px; height: 340px; }
+.page.landscape .gallery_container .thumbnails { width: 380px; float: left; }
+.page.landscape .gallery_container .thumbnails .thumbnail img { width: 110px; height: 83px; }
+.page.landscape .gallery_container .thumbnails .caption { width: 385px; height: 50px; position: absolute; bottom: 5px; right: 0px; }
+.page.landscape .video_graphic { position: absolute; right: -25px; top: 170px; }
+
+
+/* ...................................... */
+/* Orientation-specific Layout - Portrait */
+.page.portrait { width: 768px; height: 1004px; }
+.page.portrait header { -webkit-transform: translate3d(0px,-185px,0px); }
+.page.portrait article { height: 809px; }
+
+/* home page */
+.page.portrait.home header { -webkit-transform: translate3d(0px,0px,0px); }
+.page.portrait.home div.logo_gourmet  { -webkit-transform: translate3d(54px,130px,0px); }
+.page.portrait.home div.logo_cupcakes { -webkit-transform: translate3d(195px,310px,0px); }
+.page.portrait.home div.cupcake_01 { -webkit-transform: translate3d(90px,545px,0px); }
+.page.portrait.home div.cupcake_02 { -webkit-transform: translate3d(360px,457px,0px); }
+.page.portrait.home div.cupcake_03 { -webkit-transform: translate3d(535px,290px,0px); }
+
+/* content */
+.page.portrait div.logo_gourmet  { -webkit-transform: scale(.6) translate3d(-215px,-60px,0px); }
+.page.portrait div.logo_cupcakes { -webkit-transform: scale(.85) translate3d(390px,90px,0px); }
+.page.portrait .map_container.on  { -webkit-transform: translate3d(385px,170px,0px); }
+.page.portrait .contact_us_content { width: 275px; }
+.page.portrait .gallery_container { height: 630px; position: relative; }
+.page.portrait .gallery_container .detail { margin-bottom: 10px; padding-bottom: 10px; border-bottom: 2px solid #8e5b30; }
+.page.portrait .gallery_container .detail img { width: 640px; height: 427px; }
+.page.portrait .gallery_container .thumbnails { margin-top: 65px; }
+.page.portrait .gallery_container .thumbnails .thumbnail img { width: 95px; height: 72px; }
+.page.portrait .gallery_container .thumbnails .caption { height: 50px; position: absolute; top: 450px; left: 0px; }
+.page.portrait .video_graphic { position: absolute; right: -65px; top: 415px; }
+
+

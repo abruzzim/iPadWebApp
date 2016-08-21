@@ -1,0 +1,10 @@
+
+/* Global Styles */
+body { margin: 0px; padding: 0px; font-family: Helvetica; font-size: 14px; color: #8e5b30; }
+
+h1 { margin: 0 0 12px 0; font-weight: normal; font-size: 2.5em; color: #b17d59; }
+h2 { margin: 0 0 .5em 0; font-size: 1.8em; }
+h3 { font-size: 1.2em; margin: 0 0 0 0; }
+p,ul { margin: 0 0 1.5em 0; line-height: 1.4em; }
+a { color: #900; }
+.clear { clear: both; line-height: 1px; }
